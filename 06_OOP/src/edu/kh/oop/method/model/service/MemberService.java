@@ -39,7 +39,6 @@ public class MemberService {
 			case 4 :/*updateMember()*/ break;
 			case 0 :System.out.println("프로그램 종료,,"); break;
 			default : System.out.println("메뉴번호만 입력해");
-			
 			}
 			
 			

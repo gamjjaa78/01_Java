@@ -16,6 +16,11 @@ public class khTest01 {
 
 				for (int num = 1; num <= 9; num++) {
 					System.out.printf("%d*%d=%d\n", input, num, input * num);
-				} break;
+				}
+				break;
 			} else {
-				System.out.println("제대로 입력해"); }}}}
+				System.out.println("제대로 입력해");
+			}
+		}
+	}
+}

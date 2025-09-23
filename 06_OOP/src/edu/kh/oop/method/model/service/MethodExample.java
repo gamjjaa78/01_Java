@@ -21,7 +21,11 @@ public class MethodExample {
 	public int method2(int a, int b) {
 		int sum = a + b;
 		return sum;
-
+//		return 값; (반환값이 있는 상태)
+//		해당 메서드를 종료하고 호출한 곳으로 값을 가지고 돌아감
+		
 	}
+	
+//	public int method2(int)
 
 }
