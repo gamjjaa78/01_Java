@@ -16,7 +16,7 @@ public class OperatorPractice {
 		System.out.print("사탕 개수 : ");
 		int candy=sc.nextInt();
 		System.out.printf("1인당 사탕 개수 : %d\n", candy/per);
-		System.out.printf("남은 사탕 개수 : %d\n\n", (candy%per));
+		System.out.printf("남은 사탕 개수 : %d\n\n", candy%per);
 														//모듈러는 나머지자리에 기입
 														//나누기 후 나머지만 표시한다는 뜻 
 	}

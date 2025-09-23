@@ -103,7 +103,7 @@ public class OpExample {
 		
 	public void testEx4() {	
 		//삼항 연산자 :
-		//조건식?true일때 수행될 값 : false일때 수행될값 <-형태
+		//조건식? true일때 수행될 값 : false일때 수행될값 <-형태
 		
 		int num=30;
 		//num이 30보다 크면(초과) "num은 30보다 큰수이다"

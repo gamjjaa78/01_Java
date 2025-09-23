@@ -6,6 +6,7 @@ public class OperatorPractice3 {
 	Scanner sc = new Scanner(System.in); //전역변수
 	
 	public void practice1() {
+//		회원이라면 10% 할인을 적용하고, 그렇지 않다면 5% 할인을 적용한 최종 가격을 출력해라
 //		[실행화면]
 //				가격을 입력 하세요 : 10000
 //				멤버십 있으세요? (있으면 true / 없으면 false 입력) : true

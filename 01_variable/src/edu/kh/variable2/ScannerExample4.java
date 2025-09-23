@@ -16,7 +16,7 @@ public class ScannerExample4 {
 		//정수값과 공백문자(엔터)가 입력버퍼에 들어감
 		//nextInt()는 정수값만 수집해 입력버퍼에 공백문자 남음
 		
-		//입력버퍼에 남은 개행문자 제거
+		//입력버퍼에 남은 개행문자 제거, 없을시 sc.nextLine();에 공백이 들어가 안쳐짐
 		sc.nextLine();
 				
 		System.out.print("nextLine() 입력 : ");

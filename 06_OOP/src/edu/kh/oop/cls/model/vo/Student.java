@@ -15,8 +15,34 @@ public class Student { // 클래스 선언부
 	int v3 = 30; // (default) 같은 패키지
 	private int v4 = 40; // 해당 클래스 내부
 
+//	static 예약어
+	public static String schoolName = "KH고등학교"; //static 변수는 이탤릭체
+
+//	final 예약어
+	private final int TEMP1=100;
+	
+//	getter만 만들어진 이유
+//	final 예약어가 붙은 상수 TEMP1은 재대입 불가, setter 안만들어줌
+	public int getTEMP1() {
+		return TEMP1;
+	}
+//	public void setTEMP1(int TEMP1) {
+//		this.TEMP1=TEMP1;
+//	}
+	
+	
+	
+	
+
+	
+	
 //	2. 생성자
 //	3. 메서드
+
+
+
+
+
 
 	public void ex() {
 		// 필드 접근제한자 확인하기
