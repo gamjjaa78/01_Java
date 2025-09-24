@@ -1,51 +1,71 @@
 package edu.kh.oop.method.model.vo;
 
-public class Member { //회원클래스
-//	속성+기능
-//	필드(==속성)
-	private String memenrId;
-	private String memenrPw;
-	private String memenrName;
-	private int memenrAge;
-	
-	//	기능(==메서드/생성자)
-	public Member() {}
-		
-	public Member(String memenrId, String memenrPw, String memenrName, int memenrAge) {
-		this.memenrId = memenrId;
-		this.memenrPw = memenrPw;
-		this.memenrName = memenrName;
-		this.memenrAge = memenrAge;
+public class Member { // 회원클래스
+	// 속성+기능
+	// 필드(==속성)
+	private String memberId;
+	private String memberPw;
+	private String memberName;
+	private int memberAge;
+
+	// 기능(==메서드/생성자)
+	public Member() {
 	}
 
+	public Member(String memberId, String memberPw, String memberName, int memberAge) {
 
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.memberName = memberName;
+		this.memberAge = memberAge;
+	}
 
-	public String getMemenrId() {
-		return memenrId;
+	public String getMemberId() {
+		return memberId;
 	}
-	public void setMemenrId(String memenrId) {
-		this.memenrId = memenrId;
+
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
 	}
-	public String getMemenrPw() {
-		return memenrPw;
+
+	public String getMemberPw() {
+		return memberPw;
 	}
-	public void setMemenrPw(String memenrPw) {
-		this.memenrPw = memenrPw;
+
+	public void setMemberPw(String memberPw) {
+		this.memberPw = memberPw;
 	}
-	public String getMemenrName() {
-		return memenrName;
+
+	public String getMemberName() {
+		return memberName;
 	}
-	public void setMemenrName(String memenrName) {
-		this.memenrName = memenrName;
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
 	}
-	public int getMemenrAge() {
-		return memenrAge;
+
+	public int getMemberAge() {
+		return memberAge;
 	}
-	public void setMemenrAge(int memenrAge) {
-		this.memenrAge = memenrAge;
+
+	public void setMemberAge(int memberAge) {
+		this.memberAge = memberAge;
 	}
+
+	// Object 클래스:모든 클래스의 최상위 부모
+	//Object.toString()
+	//객체 위치+주소값을 해시코드 형태로 문자열 반환
 	
-	
-	
+	//Override:부모가 가진 메서드를 자식이 재정의 하는 것
+	//@ 어노테이션:컴파일러 인식용 주석
+	@Override //메서드가 부모클래스의 메서드를 정확히 문법에 맞춰
+			  //재정의(오버라이딩)했는지 검사하는 것
+	public String toString() {
+		return memberId+"/"+memberName+"/"+memberAge+"세";
+		// 객체의 주소값을 리턴
+	}
+	//toString() 메서드:객체가 문자열로 변한돼야 할때 사용
+	//->보통 객체의 필드값을 출력하는 용도로 오버라이딩하여 사용
+	//
 	
 }

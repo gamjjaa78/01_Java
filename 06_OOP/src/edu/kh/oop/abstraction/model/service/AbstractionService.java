@@ -2,10 +2,10 @@ package edu.kh.oop.abstraction.model.service;
 
 import edu.kh.oop.abstraction.model.vo.People;
 
-//	service : 특정 기증(비즈니스 로직)을 제공하는 패키지
-//	비밀번호 암호와, 파일 검사 등
+//	service : 특정 기능(비즈니스 로직)을 제공하는 패키지
+//	비밀번호 암호화, 파일 검사 등
 
-public class AbstracionService {
+public class AbstractionService {
 //	속성, 기능
 
 	public void ex1() {

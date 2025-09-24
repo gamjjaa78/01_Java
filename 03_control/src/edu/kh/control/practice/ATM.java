@@ -1,12 +1,11 @@
-package edu.kh.control.branch;
+package edu.kh.control.practice;
 
 import java.util.Scanner;
 
-public class TestRsp {
-
+public class ATM {
 	Scanner sc = new Scanner(System.in);
 
-	public void ATM() {
+	public void Atm() {
 
 		int money = 10000;
 		int sum = money;

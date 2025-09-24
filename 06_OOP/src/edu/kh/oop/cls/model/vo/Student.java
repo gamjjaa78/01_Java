@@ -30,19 +30,8 @@ public class Student { // 클래스 선언부
 //		this.TEMP1=TEMP1;
 //	}
 	
-	
-	
-	
-
-	
-	
 //	2. 생성자
 //	3. 메서드
-
-
-
-
-
 
 	public void ex() {
 		// 필드 접근제한자 확인하기

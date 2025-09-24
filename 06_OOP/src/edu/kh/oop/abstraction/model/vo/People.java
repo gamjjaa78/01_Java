@@ -5,7 +5,7 @@ package edu.kh.oop.abstraction.model.vo;
 //	vo(Value Object) : 값 저장용 생성위한 클래스 모아두는 패키지
 
 public class People {
-//	클래스란 객체의 특성(속성과 기능)을 정의한 것, 객체 생성위하 설계도
+//	클래스란 객체의 특성(속성과 기능)을 정의한 것, 객체 생성위한 설계도
 //	속성==값, date, 값을 저장하기 위한 변수 선언
 //	->국민이라면 공통적으로 가지고 있는 속성만 작성(추상화)
 //	->이름, 성별, 주민번호, 주소, 전화번호, 나이
@@ -99,7 +99,6 @@ public class People {
 //	public String getName() {
 //		return name; //name 이라는 반환값 있음, 반환형 : 반환하는 값의 자료형
 //		return 반환, 되돌려주다
-//		return; 현재 메서드 종료, 호출한 쪽으로 되돌아감
 //		return; 현재 메서드 종료, 호출한 쪽으로 되돌아감
 //		return 값/변수; 현재 메서드 종료, 값/변수가지고 호출한 쪽으로 되돌아감
 //	}

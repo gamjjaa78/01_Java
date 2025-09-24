@@ -16,9 +16,12 @@ public class Run2 {
 //		lp.practice7();
 
 		whileExample whileEx = new whileExample();
-		// whileEx.ex1();
-		whileEx.ex2();
-
+//		whileEx.ex1();
+//		whileEx.ex2();
+		
+		ATM dg=new ATM();
+		dg.Atm();
+		
 	}
 
 }
