@@ -1,17 +1,19 @@
 package com.kh.practice.snack.model.vo;
 
+// vo : 값 저장용 객체
 public class Snack {
-	
-	private String kind;
+	// 필드
+	private String kind; 
 	private String name;
-	private String flavor;
+	private String flavor; 
 	private int numOf;
 	private int price;
 	
+	// 기본생성자
 	public Snack() {}
 
+	// 매개변수 생성자
 	public Snack(String kind, String name, String flavor, int numOf, int price) {
-		super();
 		this.kind = kind;
 		this.name = name;
 		this.flavor = flavor;
@@ -19,6 +21,9 @@ public class Snack {
 		this.price = price;
 	}
 
+
+	// 메서드
+	// getter/setter
 	public String getKind() {
 		return kind;
 	}
@@ -58,12 +63,13 @@ public class Snack {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
-	@Override
-	public String toString() {
-		return "Snack [kind=" + kind + ", name=" + name + ", flavor=" + flavor + ", numOf=" + numOf + ", price=" + price
-				+ "]";
+	
+	public String infomation1() {
+		return kind + "(" + name + " - " + flavor + ") " + numOf + "개 " + price + "원";
 	}
+
+	
+	
 	
 	
 	

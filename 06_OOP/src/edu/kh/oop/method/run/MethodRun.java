@@ -11,12 +11,12 @@ public class MethodRun {
 //		ex.method1();
 		
 		MemberService service=new MemberService(); //기본생성자, ()안에 뭐있음 매개변수있는 생성자
-//		service.displayMenu();
+		service.displayMenu();
 		
-		Member member=new Member("user01","pass01","홍길동",20);
+//		Member member=new Member("user01","pass01","홍길동",20);
 		
-		System.out.println(member);
-		System.out.println(member.toString());
+//		System.out.println(member);
+//		System.out.println(member.toString());
 		
 		
 	}
