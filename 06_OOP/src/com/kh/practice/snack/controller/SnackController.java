@@ -30,7 +30,7 @@ public class SnackController {
 	
 	public String confirmData() {
 		// 저장된 데이터를 반환함
-		return s.infomation();
+		return s.infomation1();
 	}
 	
 	

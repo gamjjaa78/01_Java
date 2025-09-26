@@ -58,4 +58,10 @@ public class Person /*extends Object*/{
 	public String toString() {
 		return name+"/"+age+"/"+nationality;
 	}
+	//final 메서드->오버라이딩 불가
+	//메서드의 기능이 변하면 안되는 경우 
+	public final void onlyEmployee() {
+		System.out.println("final된 메서드");
+		
+	}
 }
