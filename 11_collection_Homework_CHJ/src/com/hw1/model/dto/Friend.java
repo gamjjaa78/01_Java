@@ -4,7 +4,6 @@ public class Friend {
 	private String name;
 
 	public Friend() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Friend(String name) {
@@ -20,13 +19,7 @@ public class Friend {
 		this.name = name;
 	}
 
-	public void displayInfo() {
-		// TODO Auto-generated method stub
-
+	public void pickLeader() { 
+		System.out.println(name + "가 떡잎방법대 대장이다!");
 	}
-
-//	@Override
-//	public String toString() {
-//		return name + "가 떡잎방범대 대장이다!";
-//	}
 }
