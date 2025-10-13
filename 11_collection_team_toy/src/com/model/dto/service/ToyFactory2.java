@@ -78,22 +78,22 @@ public class ToyFactory2 {
 		for (int i = 0; i < toyList.size(); i++) {
 
 			System.out.print(i + 1 + ". ");
-			System.out.print(toyList.get(i));
+			System.out.println(toyList.get(i));
 		}
 	}
 
 	public void AddNewToy() {
-		System.out.println("새 장난감 추가");
-		System.out.println("장난감 이름 : ");
+		System.out.println("<새 장난감 추가>");
+		System.out.print("장난감 이름 : ");
 		String name = sc.nextLine();
-		System.out.println("사용가능연령 : ");
+		System.out.print("사용가능연령 : ");
 		int age = sc.nextInt();
-		System.out.println("가격");
+		System.out.print("가격 :");
 		int price = sc.nextInt();
 		sc.nextLine();
-		System.out.print("색상:");
+		System.out.print("색상 :");
 		String color = sc.nextLine();
-		System.out.print("제조일(YYYYMMDD 형식으로 입력):");
+		System.out.print("제조일(YYYYMMDD 형식으로 입력) : ");
 		int createDate = sc.nextInt();
 		sc.nextLine();
 
@@ -123,7 +123,6 @@ public class ToyFactory2 {
 				delete_num = i;
 			}
 		}
-
 		if (delete_num == -1) {
 			System.out.println("해당 이름의 장난감이 없습니다.");
 		} else {
