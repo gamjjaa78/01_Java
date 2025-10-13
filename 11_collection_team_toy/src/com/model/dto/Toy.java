@@ -8,8 +8,8 @@ public class Toy {
 	private int price;
 	private String color;
 	private int createDate;
-    private Set<String> usedIngredients;
-	
+	private Set<String> usedIngredients;
+
 	public Toy() {
 		// TODO Auto-generated constructor stub
 	}
@@ -63,7 +63,7 @@ public class Toy {
 	public void setCreateDate(int createDate) {
 		this.createDate = createDate;
 	}
-	
+
 	public Set<String> getUsedIngredients() {
 		return usedIngredients;
 	}
@@ -75,12 +75,12 @@ public class Toy {
 	@Override
 	public String toString() {
 		return "이름 : " + name + " / 가격 : " + price + " / 색상 : " + color + " / 사용가능연령 : " + age + " / 제조년월일 : "
-			+ createDate + " / 재료 : " + usedIngredients_print();
+				+ createDate + " / 재료 : " + usedIngredients_print();
 	}
-		
+
 	public String usedIngredients_print() {
 		String result = String.join(", ", usedIngredients);
 		return result;
 	}
-	
+
 }
