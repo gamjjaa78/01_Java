@@ -2,6 +2,7 @@ package com.model.dto.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -33,7 +34,7 @@ public class ToyFactory2 {
 
 		try {
 			do {
-				System.out.println("<<플레이타임 공장>>");
+				System.out.println("\n<<플레이타임 공장>>");
 				System.out.println("1. 전체 장난감 조회");
 				System.out.println("2. 새로운 장난감 만들기");
 				System.out.println("3. 장난감 삭제");
@@ -41,7 +42,7 @@ public class ToyFactory2 {
 				System.out.println("5. 연령별 사용가능한 장난감 순으로 조회");
 				System.out.println("6. 재료 추가");
 				System.out.println("7. 재료 제거");
-				System.out.print("번호눌러 : ");
+				System.out.print("번호 눌러어 : ");
 				num = sc.nextInt();
 				sc.nextLine();
 
@@ -55,7 +56,8 @@ public class ToyFactory2 {
 				case 3:
 					RemoveToy();
 					break;
-				case 4:// SelectByDate();
+				case 4:
+					SelectByDate();
 					break;
 				case 5:// SelectByAge();
 					break;
@@ -74,7 +76,7 @@ public class ToyFactory2 {
 	}
 
 	public void SelectAllToy() {
-		System.out.println("<전체 장난감 목록>");
+		System.out.println("\n<전체 장난감 목록>");
 		for (int i = 0; i < toyList.size(); i++) {
 
 			System.out.print(i + 1 + ". ");
@@ -83,7 +85,7 @@ public class ToyFactory2 {
 	}
 
 	public void AddNewToy() {
-		System.out.println("<새 장난감 추가>");
+		System.out.println("\n<새 장난감 추가>");
 		System.out.print("장난감 이름 : ");
 		String name = sc.nextLine();
 		System.out.print("사용가능연령 : ");
@@ -114,7 +116,7 @@ public class ToyFactory2 {
 	}
 
 	public void RemoveToy() {
-		System.out.print("\n삭제할 장난감의 이름을 입력하세요:");
+		System.out.print("\n삭제할 장난감의 이름을 입력하세요 : ");
 		String name = sc.nextLine();
 		int delete_num = -1;
 
@@ -129,6 +131,14 @@ public class ToyFactory2 {
 			toyList.remove(delete_num);
 			System.out.println("장난감이 삭제되었습니다.");
 		}
+	}
+
+	public void SelectByDate() {
+		System.out.println("\n제조일 순으로 장난감 정렬");
+		toyList.sort(Comparator.comparingInt(null));
+		
+		
+		
 	}
 
 }
