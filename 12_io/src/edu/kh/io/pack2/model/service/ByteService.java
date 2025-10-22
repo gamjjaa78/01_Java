@@ -31,7 +31,7 @@ public class ByteService {
 			// 단, 폴더는 자동생성 해주지 않음.
 			// 기존 파일이 존재하면 내용을 덮어쓰기함
 
-			fos = new FileOutputStream("/io_test/20251014/바이트기반_테스트.txt");
+			fos = new FileOutputStream("/io_test/20251014/바이트기반_테스트.txt"); //경로없으면 자동으로 상대경로로 됨 
 
 			// String의 불변성 문제를 해결한 객체
 			// StringBuilder(비동기) / StringBuffer(동기)
